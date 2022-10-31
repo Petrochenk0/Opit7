@@ -88,6 +88,23 @@ nav .n li ul li{
 nav .n li ul li a{
 	color:black;
 }
+nav .n li:hover ul{
+	display:block;
+	animation:knopka 1.5s infinite;
+	transform:rotateY(360deg);
+	animation-direction: alternate;
+}
+@keyframes knopka{
+	0%{
+		transform:rotateY(0deg);
+	}
+	60%{
+		transform:rotateY(240deg);
+	}
+	100%{
+		transform:rotateY(360deg);
+	}
+}
 aside .item{
 	background-color:#fff;
 	margin-bottom:1.5em;
